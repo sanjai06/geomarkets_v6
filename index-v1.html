@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GEO MARKET</title>
+  <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/Gg72x2_SHmxi8X0BLo33HMpr/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-z/b6fleGPgQ5vn6jEWL2AgppzIbd1EhPqd0wf0J9vy92dVYtOxZIOAordrUh+mBN"></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+  <!-- customized fontawesome css link -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+
+<!-- animation css link -->
+  <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+  
+  <!-- custom css link -->
+  <link rel="stylesheet" type="text/css" href="./vendar/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="vendar/css/sliders.css">
+</head>
+<body >
+<!-- container fluid start -->
+<div  class="container-fluid" >
+  <!-- header section start -->
+  <div class="header_bg">
+    <!-- header row section start -->
+      <div class="row p-18px p-5px">
+          <!-- empty row start-->
+          <div class="col-lg-1 col-sm-1 "></div>
+           <!-- empty row end-->
+           <!-- header start -->
+           <div class="col-xs-12 col-lg-10 col-sm-10 pt-0">
+              <div class="col-sm-4  col-xs-12 col-lg-4 logo-align">
+                <img src="assert/page_layer/geo_logo.png" class="header_logo">
+              </div>
+              <!-- empty row start-->
+              <div class="col-lg-1 col-sm-1 "></div>
+              <!-- empty row end-->
+              <!-- login button -->
+                  <div class="col-xs-12 col-lg-6 col-sm-7  font-nexa" >
+                     <div class="row pt-10px mt-5px p-5px">
+                         <a href="https://secure.geomarkets.com/user/">
+                            <div class=" col-sm-4 col-xs-4">
+                            <button class="header_button ">
+                              <img src="assert/icons/1.png" class="icons"> CLIENT  LOGIN
+                            </button>
+                          </div>
+                         </a>
+                          <a href="https://secure.geomarkets.com/partner/">
+                            <div class=" col-sm-4 col-xs-4">
+                               <button class="header_button">
+                             <img src="assert/icons/2.png" class="icons"> PARTNER  LOGIN
+                            </button>
+                          </div>
+                          </a>
+                          <div class=" col-sm-4 col-xs-4">
+                               <button class="header_button" id="modelbox">
+                                  <img src="assert/icons/3.png" class="icons"> REGISTER
+                            </button>
+                          </div>
+                    </div>
+                  </div>   
+              </div>
+           <!-- header end -->
+            <!-- empty row start-->
+          <div class="col-lg-1 col-sm-1 col-xs-0"></div>
+           <!-- empty row end-->
+     <!-- header row section end -->
+      </div>
+  </div>
+  <!-- header section end -->
+  <!-- The Modal -->
+<div id="myModal" class="modal" >
+  <!-- Modal content -->
+
+  <div class="modal-content">  
+    <div class="row">
+      <!-- account section -->
+        <div class="col-lg-6  col-sm-6 col-xs-6">
+          <h4 class="text-center">Trader Account</h4>
+        </div>
+         <div class="col-lg-6 col-sm-6 col-xs-6">
+          <h4 class="text-center">Partner Account</h4>
+        </div>  
+        <!-- account section -->
+     </div>
+     <!-- account row end -->
+     <div class="row webview-content" >
+      <!--first name  -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input class="form-control" required="" placeholder="Enter First Name" id="FirstName" name="FirstName" type="text">
+              </div>
+          </div>
+        <!--first name end  -->
+        <!--last name start -->
+        <div class="col-md-6 col-sm-6  col-xs-12">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input class="form-control" placeholder="Enter Last Name" id="LastName" name="LastName" type="text">
+            </div>
+        </div>
+        <!-- last name end -->
+        <!-- select gender start-->
+          <div class="col-md-6 col-sm-6">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-anchor"></i></span>
+              <select name="country" required="" id="Gender" class="form-control">
+                  <option value="">Select Gender</option>
+                  <option value="Male"> Male </option>
+                  <option value="Female"> Female </option>
+              </select>
+            </div>
+          </div>
+           <!-- select gender start-->
+           <!-- date of birth -->
+           <div class="col-md-6 col-sm-6">
+              <div class="input-group">
+               <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              <input class="form-control" required="" placeholder="Date of Birth" id="txtBirthDate" name="BirthDate" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" type="text">
+              </div>
+          </div>
+           <!-- date of birth end -->
+           <!-- acc sign -->
+             <div class="col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-edit"></i></span>
+                    <select required="" id="account" name="AccountCode" class="form-control">
+                      <option value="">Which account are you signing up for?</option>
+                      <option value="Individual"> Trading Account </option>
+                      <option value="Corporate"> Corporate Account </option>
+                      <option value="Trust"> Trust Account </option>
+                    </select>
+                  </div>
+            </div>
+            <!-- acc sign end-->
+            <!-- email section start -->
+            <div class="col-md-6 col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input class="form-control" required="" placeholder="Enter Email Address" name="Email" id="email" type="email">
+                 </div>
+            </div>
+            <!-- email section end -->
+            <!-- country code section start -->
+            <div class="col-md-6 col-sm-6">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                    <select required="" id="telNumberCountryCode" name="TelNumberCountryCode" class="form-control">
+                        <option value="">Select country code</option>
+
+                      </select>
+                </div>
+                  <input type="hidden" id="Citizenship" name="Citizenship">
+                  <input type="hidden" id="ResidenceCountry" name="ResidenceCountry">
+            </div>
+            <!-- country code section end -->
+            <!-- phone number start -->
+              <div class="col-md-6 col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                  <input class="form-control" placeholder="Enter Mobile No." id="telNumber" name="TelNumber" type="number" required="">
+                </div>
+              </div>
+            <!-- phone number end -->
+            <!-- country start -->
+            <div class="col-md-6 col-sm-6">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                <select id="ResidentialCountry" name="ResidentialCountry" class="form-control">
+                    <option>Select country</option>
+                </select>
+            </div>
+            </div>
+            <!-- country end -->
+      </div>
+      <!-- form row end -->
+      <!-- submit button start -->
+        <div align="center" >
+          <button class="submit-form-button">Submit</button>
+      </div>
+      <!-- submit button end -->
+             <span class="close-model">&times;</span>
+
+    </div>
+    <!-- mymodel end -->
+</div>
+<!-- model box end -->
+<!--email and nav section start  -->
+<section>
+  <!-- mail & nav section module start -->
+<div class="col-xs-12 col-lg-12 col-sm-12 menu-position">
+  <div class="row">
+  <!-- mail section module row start -->
+  <!-- empty row start -->
+   <div class="col-lg-1 col-sm-1 col-xs-0"></div>
+   <!-- empty row end -->
+    <!-- mail section start -->
+      <div class="col-xs-10 col-lg-4 col-sm-4">
+        <div class="btns">
+          <button class="btn-text font-nexa">           
+          <img src="assert/icons/14.png" ><span> support@geomarkets.com </span>        
+          </button>
+        </div>
+      </div>
+      <!-- mail section end -->
+      <!-- menu start -->
+        <div class="col-sm-7 col-lg-7">
+          <nav class="navbar navbar-inverse">
+              <div class="navbar-header">
+                      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                      </button>
+              </div>
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li class=" skew-right"><a href="index-v1.html">Home</a></li>
+                      <li class="skew-right"><a href="about.html">About</a></li>
+                      <li class="skew-right"><a href="contact.html">Contact</a></li>
+                      <li class="skew-right"><a href="service.html">Services</a></li>
+                      <li class="skew-right"><a href="Faq.html">Faq</a></li>
+                      <li class="skew-right"><a href="#">Platform</a></li>
+                      <li class="skew-right"><a href="#">Market</a></li>
+                      <li class="skew-right"><a href="#">Instruments</a></li>              
+                   </ul>
+              </div>
+          </nav>
+        </div>
+         <!-- menu end -->
+    <!-- mail & nav section module row end -->
+</div>
+</div>
+  <!-- mail section module end -->
+  <!-- slider section start -->
+
+
+ <!-- slider section start -->
+  <div class="swiper slider_bg object-fit-contain" style="height: 80vh;" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slider_bg_1">
+        <div class="row mar-left-40">
+                <div class="col-lg-12 col-sm-12  col-xs-12">
+                 <h1 class="start animate__animated animate__bounceInDown animate__delay-2s  2s ">START </h1>
+                 <div><img src="assert/page_layer/badge.png" class="badge-img animate__animated animate__backInDown animate__delay-2s  2s mobile_view" style="position: absolute;width:100px" ></div>
+                  <h1 class="trading animate__animated animate__backInDown animate__delay-2s  2s">TRADING <span class="font-small-size">WITH</span></h1>
+                  <h1 class="geo_header_text text-white animate__animated animate__backInDown animate__delay-1s  1s">GEO MARKETS</h1>  
+               </div> 
+                
+            </div>
+      </div>
+      <!-- swiper slider 2 start -->
+      <div class="swiper-slide text-left slider_bg_2" >
+        <div class="row mar-left-40">
+                <div class="col-lg-12 col-sm-12  col-xs-12">
+                 <h1 class="expert animate__animated animate__bounceInLeft bounce-left-delay-1"><i>EXPERTS</i></h1>
+                  <h1 class="trade-analytical animate__animated animate__bounceInLeft bounce-left-delay-2"><i>ANALYTICAL</i></h1>
+                  <h1 class="reviews  animate__animated animate__bounceInLeft bounce-left-delay-3"><i>REVIEWS</i></h1>  
+               </div>  
+            </div>
+      </div>
+       <!-- swiper slider 2 end -->
+        <!-- swiper slider 3 start -->
+      <div class="swiper-slide text-left slider_bg_3" >
+        <div class="row text-left mar-left-44 mar-left-40 ">
+                <div class="col-lg-12 col-sm-12 mb-5">
+                  <div class=" start-badge font-nexa  geo-header-bar animate__animated animate__bounceInLeft bounce-left-delay-4 " ></div>
+                  <h1 class="header_start_text   animate__animated  animate__bounceInLeft bounce-left-delay-5 font-nexa">YOU CAN LEAN</h1>
+                 <h1 class="starts  text-white animate__animated animate__bounceInLeft bounce-left-delay-6 font-nexa">How to earn on the </h1>
+                  <h1 class="trades text-white  animate__animated  animate__bounceInLeft bounce-left-delay-7  font-nexa">Forex Market</h1>
+                  <h1 class="geo-text-mark text-white animate__animated animate__bounceInLeft bounce-left-delay-8  font-nexa ">With Geo Markets</h1>  
+                
+               </div>  
+            </div>
+      </div>
+    <div class="swiper-slide object-fit-contain" id="mobile-video-lg"> 
+    
+         <video playsinline autoplay muted loop oncontextmenu="if (!window.__cfRLUnblockHandlers) return false; return false;" controlsList="nodownload"  class="video-img" style="height:90vh;" >
+              <source src="assert/slider_set/geo_lg.mp4" type="video/mp4" >
+              Your browser does not support HTML5 video.
+        </video>     
+       
+      </div> 
+      <div class="swiper-slide slider_bg_4">
+        <div class="row text-left ">         
+                <div class="header-logo-position">
+                  <div class="geo-header-bar-right" ></div>
+                 <h1 class="geo-instrument">650+ INSTRUMENTS</h1>
+                  <h1 class="right-mobile-terminal">MT4 PC & MOBILE TERMINAL</h1>
+                  <h1 class="right-live-support">24x5 LIVE SUPPORT</h1>  
+               </div>  
+            </div>
+      </div>
+    </div>
+    <div class="social_media_icons">
+      <div class="social_media_icons_bg">
+        <img src="assert/icons/t-t.png" class="social_icons">
+      </div>
+      <div class="marg-bottm-5"></div>
+      <div class="social_media_icons_bg">
+          <img src="assert/icons/li-t.png" class="social_icons">
+      </div>
+      <div class="marg-bottm-5"></div>
+      <div class="social_media_icons_bg">
+        <img src="assert/icons/q-t.png" class="social_icons">
+      </div>
+      <div class="marg-bottm-5"></div>
+      <div class="social_media_icons_bg">
+        <img src="assert/icons/u-t.png" class="social_icons red">
+      </div>
+    </div>
+    <!-- trade button start-->
+    
+    <div class ="trade_mark_header_button">
+              <button class="trade_mark_button">OUR TRADING TERMINALS</button>
+          </div> 
+    <!-- trade button end -->
+    <div> 
+     
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination bottom-pgn"  ></div>
+
+  </div>
+      <!-- slider section end -->
+  <div class="marq_position">
+    <div class="header_bottom-img_sec ">
+      <img src="assert/page_layer/footer_bottom.png" class="header-img-bott" style="position:absolute;z-index: 100;">
+   </div>
+    <div class="marq_bag">
+        <marquee width="100%" direction="left" >
+        <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span>   <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span>  <span class="h-bar" ></span><span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span>   <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span> <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> <span class="h-bar" ></span> <span class="red-marq">GBPUSDI.21771</span>  <span class="h-bar" ></span> <span class="green-marq">GBPUSDI.2771 </span> </marquee>
+    </div> 
+  </div>
+ </div>
+</section>      
+
+<!-- about section module start -->
+<section>
+<!-- about bg start -->
+<div class="about_bg pt-100px">
+    <!-- about and slider start -->
+    <div class="row ">
+      <!-- about and slider start -->
+          <div class="col-lg-1 col-sm-1 col-xs-0"></div>
+          <div class="col-lg-10 col-sm-10 col-xs-12 ">
+            <div class="row mt-3">
+              <div class="col-lg-6 col-sm-6 col-xs-12 mt-lg-10">
+                <div>
+                   <h6 class="about-inner-text">Automated Transparent Market Place </h6>
+                    <div class="mobile_view_mt">
+                       <span class="gradient-text">A</span><span class="gradient-text">B</span><span class="gradient-text">O</span><span class="gradient-text">U</span><span class="gradient-text">T</span>&nbsp; <span class="gradient-text">G</span><span class="gradient-text">E</span><span class="gradient-text">O</span> &nbsp;   <span class="gradient-text">M</span><span class="gradient-text">A</span class="gradient-text"><span class="gradient-text">R</span><span class="gradient-text">K</span><span class="gradient-text">E</span><span class="gradient-text">T</span><span class="gradient-text">S</span>
+                    </div>
+                    <p class="about_text  ">Geo markets Provides you best trading conditions which is very fast and flexible. We are the largest and respected firms in forex industry since 2010. Simple Trading environment which is created by experts to make your work simple</p> 
+                   <p class="about_text gray ">Daily market analysis by our market research team, we support wide range of friendly payment. 24/5 Qualified support and leverage up to 1:500.</p>
+                   <p class="about_text  ">Geo Markets is part of Aetram Groups, a Global market leader in terms of financial services, was inducted in the year 2010. Aetram Groups itself came into existence in the year 1996, where they established themselves as an electronics parts and vehicles spare dealer. Through the years, they have diversified themselves in various sectors of businesses varying from manufacturing, transportation, Logistics, Health care, Education, Financial consulting and Investment solutions. Since then, Geo Markets became prominent and reliable venture in terms of financial trading market and other financial management solutions</p>
+                 </div>
+              </div>
+                  <!-- about content end -->
+                  <!-- slider start -->
+                  <div class="col-lg-6 col-sm-6 col-xs-12 ">
+                   <div class="swiper about_bg_slider" style="background:#373636" >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="assert/slider_set/2_about.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assert/slider_set/3_about.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assert/slider_set/1_about.png">
+                        </div>
+                    </div>
+                      <div class="swiper-button-next right-0" style="background: #373636;padding: 10px;right: 0;">
+                      </div>
+                      <div class="swiper-button-prev lef-0" style="background: #373636;padding: 10px;left: 0;">
+                      </div>
+                      <div class="about_paginaion_bg"> </div>
+                        <div class="swiper-pagination swiper_about_pagination" style="    bottom: -8px;padding: 10px;text-align: right;"></div>          
+                    </div>
+              </div>
+          </div>
+    </div>
+    <div class="row blog-pagging ">
+        <div class="col-xs-12 col-lg-12  col-sm-12  ">
+            <div class="row mt-2">
+                  <div class="col-xs-12 col-lg-4 col-sm-4 heart-beat-5">
+                    <div class="blog-box ">        
+                       <img src="assert/page_layer/7.png" class="about_sec_icons">
+                      <h4>Our vision</h4>
+                      <div class="padd-5">
+                            <p class="blog-box-text">To become the leading financial services company providing unparalleled financial solution and ultimately becoming a leading banking business venture.  </p>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4 col-sm-4 heart-beat-5">
+                    <div class="blog-box">        
+                     <img src="assert/page_layer/6.png" class="about_sec_icons">
+                    <h4>Our Mission</h4>
+                    <div class="padd-5">
+                      <p class="blog-box-text">To become global leader in terms of currency trading by offering top-notch quality services by means of a transparent and secure trading platform.</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4 col-sm-4 heart-beat-5">
+                        <div class="blog-box">        
+                         <img src="assert/page_layer/5.png" class="about_sec_icons">
+                          <h4>Our values</h4>
+                          <div class="padd-5">
+                             <p class="blog-box-text  ">To expand our services outreach in farther end of the global market and empower our 9 years market expertise and become the best financial services company.</p>
+                          </div>
+                        </div> 
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="col-lg-1 col-sm-1 col-xs-0"></div> -->
+</div>
+</section>
+<!-- geo section start -->
+<section class="container-sm">
+   <div class="geo_bg "> 
+     <div class="pt-2em"></div>
+       <div class="geo-header-text">
+          <span class="gradient-texts">G</span><span class="gradient-texts">E</span><span class="gradient-texts">T</span>&nbsp;&nbsp;<span class="gradient-texts">S</span><span class="gradient-texts">T</span><span class="gradient-texts">A</span><span class="gradient-texts">R</span><span class="gradient-texts">T</span><span class="gradient-texts">E</span><span class="gradient-texts">D</span>&nbsp;&nbsp;<span class="gradient-texts">W</span><span class="gradient-texts">I</span><span class="gradient-texts">T</span><span class="gradient-texts">H</span>&nbsp;&nbsp;<span class="gradient-texts">G</span><span class="gradient-texts">E</span><span class="gradient-texts">O</span>&nbsp;&nbsp;<span class="gradient-texts">M</span><span class="gradient-texts">A</span><span class="gradient-texts">R</span><span class="gradient-texts">K</span><span class="gradient-texts">E</span><span class="gradient-texts">T</span><span class="gradient-texts">S</span>
+        </div>
+        <div><div class="gradinet-underline">.</div></div>
+         <!-- trapezoid module start -->
+          <div class="row pg-bot" >
+                <div class="col-sm-1 col-lg-1"></div>
+               <!-- trapezoid section end -->
+                  <div class="col-sm-2 col-lg-2 col-xs-6  text-center diomand_design heart-beat-1">
+                    <img src="assert/page_layer/8.png" class="geo_marker_center_img" >
+                     <p class="geo_mark_cenetr_text">REGISTER<br/>&nbsp;</p>
+                  </div>
+                <!--trapezoid section end  -->
+                  <!-- trapezoid section end -->
+                  <div class="col-sm-2 col-lg-2 col-xs-6  text-center diomand_design heart-beat-1">
+                    <img src="assert/page_layer/9.png" class="geo_marker_center_img" >
+                     <p class="geo_mark_cenetr_text">UPDATE <br/>KEY</p>
+                  </div>
+                <!--trapezoid section end  -->
+                  <!-- trapezoid section end -->
+                  <div class="col-sm-2 col-lg-2 col-xs-6  text-center diomand_design heart-beat-1">
+                    <img src="assert/page_layer/10.png" class="geo_marker_center_img width-80" >
+                     <p class="geo_mark_cenetr_text">FUND YOUR <br/>ACCOUNT</p>
+                  </div>
+                <!--trapezoid section end  -->
+                <!-- trapezoid section end -->
+                  <div class="col-sm-2 col-lg-2 col-xs-6 text-center diomand_design heart-beat-1">
+                    <img src="assert/page_layer/11.png" class="geo_marker_center_img width-80" >
+                     <p class="geo_mark_cenetr_text">START <br/>TRANDING</p>
+                  </div>
+                <!--trapezoid section end  -->
+             <div style="margin-top:20px"></div> <div style="margin-top:20px"></div>
+
+          </div>
+     <!-- trapezoid module start -->
+   </div>
+</section>
+<!-- geo start end -->
+<!-- testimonal section start -->
+<section>
+  <div class="testimonal_bg">
+      <div class="pt-3em"></div>
+      <div class="testimonal-heading-bg">
+      <p class="testimonal-heading">TESTIMONIALS</p></div>
+      <div align="center"><div class="under-line">.</div></div>
+      <div class="padding_20"></div>
+      <div class="col-lg-1 col-sm-1"></div>
+        <div class="col-sm-10 col-lg-10 testimonal-slider">
+          <!-- testimonal slider start -->
+            <div class="swiper testimonal_bg_Slider" >
+              <!-- testimonal wrapper slider start -->
+               <div class="swiper-wrapper">
+                   <!-- testimonal slide slider start -->
+                    <div class="swiper-slide slide_bg">
+                      <!-- single testimonal start -->
+                    <div class="mb-testimonal-bg">
+                        <img src="assert/page_layer/test_half_bg.png" >
+                         <div class="test_cont_gradient">
+                          <p class="text-center co-work">MUHAMMAD JAMIL</p>
+                          <p class="text-center co-work-native"> UAE</p>
+                          <div class="slider_overbg">
+                              <p class="text-left slider-content">I have been trading forex for over eight years and have migrated from one broker to another and I was never truly satisfied with their overall services until I ran into Geo Markets. Their customer service has been outstanding even before I have opened my account. I am glad that I have finally found a broker who offers me a great service. Thank you Geo Markets!
+                             </p>
+                          </div>
+                       </div>
+                </div>
+                <!-- single testimonal end -->
+                    </div> 
+                  <!-- testimonal slide slider end -->   
+                  <!-- testimonal slide slider start -->
+                    <div class="swiper-slide slide_bg">
+                       <!-- single testimonal start -->
+                        <div class="mb-testimonal-bg">
+                          <img src="assert/page_layer/test_half_bg.png"  >
+                           <div class="test_cont_gradient">
+                                <p class="text-center co-work">Beedhlakama</p>
+                                <p class="text-center co-work-native"> Sri Lanka</p>
+                                <div class="slider_overbg">
+                                     <p class="m-1 text-left slider-content">Geo Markets has all the infrastructure you need to succeed in forex trading. I have always found it difficult to find a company that is focused on customer service other than making money. I was introduced to Geo Markets by a friend of mine and this was a turning point for my trading. I am currently enjoying profitable returns and I strongly recommend Geo Markets.
+                                </p>
+                                </div>
+                              </div>
+                    </div>
+                  <!-- single testimonal end -->
+                    </div> 
+                  <!-- testimonal slide slider end -->          
+                  <!-- testimonal slide slider start -->
+                    <div class="swiper-slide slide_bg">
+                    <!-- single testimonal start -->
+                   <div class="mb-testimonal-bg">
+                        <img src="assert/page_layer/test_half_bg.png" >
+                        <div class="test_cont_gradient">
+                            <p class="text-center co-work">Mathew cryil</p>
+                            <p class="text-center co-work-native">Singapore</p>
+                            <div class="slider_overbg">
+                                 <p class="m-1 text-left slider-content">I really feel comfortable trading with Geo Markets. They are easy to get along with and my money has always been 100% under my control. I used another broker in Egypt some time ago and noticed how my money was being invested without my approval. This is not happening with Geo Markets. I recommend to anyone looking for a professional and reliable forex investment company.
+                            </p>
+                            </div>
+                          </div>
+                      </div>
+                <!-- single testimonal end -->
+                    </div> 
+                  <!-- testimonal slide slider end -->   
+                  <!-- testimonal slide slider start -->
+                    <div class="swiper-slide slide_bg">
+                     <div class="mb-testimonal-bg" >
+                        <img src="assert/page_layer/test_half_bg.png" >
+                        <div class="test_cont_gradient">
+                            <p class="text-center co-work">Bloswick</p>
+                            <p class="text-center co-work-native"> Hong Kong</p>
+                            <div class="slider_overbg">
+                                 <p class="m-1 text-left slider-content">One of the things that I truly enjoy about Geo Markets is their constant innovation. They seem to always work to provide a better service through offering their traders a wide range of services. Their support is excellent, I have never experienced any outage or trading issues. My withdrawals are processed the same day and I am very happy to manage my forex portfolio with Geo Markets.                            </p>
+                            </div>
+                          </div>
+                      </div>
+                  <!-- testimonal slide slider end -->   
+               </div>
+              <!-- testimonal wrapper slider start -->
+            </div>
+              <div class="swiper-button-next mt-2em" ></div>
+              <div class="swiper-button-prev mr-2em"></div>
+              <div class="text-center">
+        <p class="text-center client_details" >What our clients say about us</p>
+      </div>
+        </div>
+      <div class="col-lg-1 col-sm-1"></div>
+  </div>
+</section>
+<!-- footer section start -->
+<footer class="footer_bg" >
+  <div class="footer_padding">
+    <div class="row">
+      <!-- col 1 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">About Company</p>
+           <div class="footer-border-gradient"></div>
+           <div class="mar-10"></div>
+              <img src="assert/page_layer/footer_logo.png" class="footer_logo mb-left">
+               <div class="mar-10"></div>
+              <p class="footer-about-content" >
+
+              Geo Markets Provides you best trading conditions which is very fast and flexible. We are the largest and respected firms in forex industry since 2010. Simple Trading environment which is created by experts to make your work simple.
+            </p>
+             <div class="mb-bottm-footer"></div>
+        </div>
+      <!-- col 2 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Quick links</p>
+           <div class="footer-border-gradient"></div>
+           <div class="mar-10"></div>
+             <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link" >
+                      <i class="fa-solid fa-greater-than "></i> 
+                        About  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Account Types  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Faq  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text"> 
+                  <span class="footer-link"> 
+                    <i class="fa-solid fa-greater-than "></i> Privacy Policy 
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Terms of Business  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+                <div class="mb-bottm-footer"></div>
+              <!--link section end  -->
+      </div>
+      <!-- col 3 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Trade Platform</p>
+            <div class="footer-border-gradient"></div>
+            <div class="mar-10"></div>
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MT5 Pc Terminal  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link" >
+                      <i class="fa-solid fa-greater-than "></i> 
+                         MT5 Mobile Terminal  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MT5 Web Terminal   
+                  </span>
+                </div>
+
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text"> 
+                  <span class="footer-link"> 
+                    <i class="fa-solid fa-greater-than "></i> 
+                      PAMM
+                    </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MAM   
+                  </span>
+                </div>
+                <div class="mar-10"></div>
+                 <div class="mb-bottm-footer"></div>
+              <!--link section end  -->
+      </div>
+      <!-- col 4 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Subscribe</p>
+            <div class="footer-border-gradient"></div> 
+            <div class="mar-10"></div>
+            <div class="pt mail_id">
+              <input type ="text" class="left_button" value="ENTER YOUR EMAIL ID">
+              <button class="right_button">SUBMIT
+              </button>
+           </div>
+             <div class="mar-29"></div>
+
+           <p class="foooter-head">Geo Market at Social
+            <p class="foooter-head">Media</p></p>
+            <div class="footer-border-gradient"></div> 
+             <div class="mar-29"></div>
+
+            <div style="display: flex;">
+             <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/t-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/li-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/q-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/u-t.png" class="social_icons red">
+              </div>
+            </div>
+      </div>
+    </div>
+
+ <div class="mar-20"></div>
+     <!-- gmail login start -->
+    <div class="row">
+      <div class="col-lg-6  col-sm-6  col-xs-12 mt-bot">
+        <div class="phone_bg_gd heart-beat-5">
+            <div class="row">
+               <div class="col-sm-3 col-lg-3 col-xs-3">
+                  <div class="pad-10">
+                     <img src="assert/icons/12.png" class="phone_icon" >
+                  </div>
+                </div>
+                  <div class="col-sm-9 col-lg-9 col-xs-9 email_box">
+                    <p class=" phone_number mr-left-2">PHONE  &nbsp;: +230 5869 0066</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+      <div class="col-lg-6  col-sm-6  col-xs-12 ">
+        <div class="phone_bg_gd heart-beat-5">
+            <div class="row">
+               <div class="col-sm-3 col-lg-3 col-xs-3">
+                  <div class="pad-10">
+                     <img src="assert/icons/14.png" class="phone_icon" >
+                  </div>
+                </div>
+                  <div class="col-sm-9 col-lg-9 col-xs-9 email_box">
+                    <p class=" phone_number mr-left-2">EMAIL  &nbsp;: support@gmail.com</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="mar-10"></div>
+       <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+           <div class="phone_bg_gd heart-beat-5">
+              <div class="row pt-17 ">        
+                 <div class="col-sm-1 col-lg-1 col-xs-2">
+                    <div class="pad-10">
+                      <img src="assert/icons/13.png" class="phone_icon">
+                    </div>
+                  </div>
+                    <div class="col-sm-11 col-lg-11 col-xs-10 email_box">
+                      <p class=" phone_number ">LEVEL 3 EBENE HOUSE, HOTEL AVENUE  33 CYBERCITY  EBENE, 72201 - MARUTIS.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mar-20"></div>
+          <div class="footer-gradient-border"></div> 
+          <div class="mar-20"></div>
+          <!-- content section -->
+          <div>
+              <p class="footer-about-parg">Geomarkets is authorized and regulated in various jurisdictions.</p>
+               <div class="mar-20"></div>
+          <!-- content section -->
+              <p class="footer-about-parg">Geomarkets Ltd <a href="https://www.geomarkets.com" class="color-code" target="blank">( https://www.geomarkets.com )</a> with Registration number GBC189088 , Registered and Physical office address Level 3, Ebene House, Hotel Avenue, 33 Cybercity Ebene, 72201, Mauritius, regulated by the Financial Services Commission Mauritius with <span style="color: #BE7D1D ;">License number GV22200356.</span></p>
+              <div class="mar-20"></div>
+              <p class="footer-about-parg">Earnex DMCC  <a href="https://www.geomarkets.com" class="color-code" target="blank">( https://www.earnex.ae )</a> with Registration number DMCC0548 , Registered and Physical office address Unit 3001, Fortune Tower, JLT, Dubai is authorised and regulated by the Securities and Commodities Authority with <span style="color: #BE7D1D ;">License number 607017.</span> </p>
+              <div class="mar-20"></div>
+              <div class="footer-gradient-border"></div> 
+              <div class="mar-20"></div>
+
+               <p class="footer-about-parg font-12">RISK WARNING : Trading Forex and Leveraged Financial Instruments involves significant risk and may end in the loss of your invested capital. You should not invest more than you'll afford to lose and should make sure that you fully understand the risks involved. Trading leveraged products won't be suitable for all investors.Before trading, please take into concern your level of experience, investment objectives and ask independent financial advice if necessary.It's the responsibility of the Client to determine whether he/she is permitted to use the services of the Geo Markets brand based on the legal requirements based on country of residence.</p>
+                <div class="mar-20"></div>
+                <div class="mar-20"></div>
+                <i>
+                   <p class="footer-about-parg font-12 color-code">"Geo markets trades does not offer its services to residents of certain areas like Afghanistan, Belgium, Bosnia & Herzegovina, Burundi, Eritrea, Gaza Strip, Haiti, Iran, Iraq, Japan, Lao, Libya, Myanmar, North Korea, Somalia, South Sudan, Sudan, Syria, USA, Venezuela, West Bank and Yemen."</p>
+                  
+                </i>
+              </div>
+              <br/><br/><br/>
+            <div class="row">
+              <div class="col-lg-2 col-sm-2"></div>
+              <div class="col-xs-12 col-sm-5 col-lg-5">
+                 <div class="privacy_content_bg">
+                  <p class="footer_privacy"> &#169; All Rights Reserved,Powered by Geo Markets Itd, Mauritius.
+                    
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-5 col-lg-5">
+                <p class="footer_privacy">*Privacy Policy/Terms Of Business </p> 
+               </p>
+              </div>
+            </div>
+          </div>
+   
+</footer>
+
+<!--  mobile view footer section-->
+  <div class="text-center footer_mb_bg" id="mobile_view_bottom">
+     <p class="privacy_content">*Privacy Policy/Terms Of Business </p> 
+     <p class="privacy_content">&#169; All Rights Reserved By Geo Markets itd, </p>    
+  </div>
+    <!-- all rights reserved end -->
+<!-- container fluid end -->
+</div>
+  
+  
+  <!-- jqury plugin  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- font awesome  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="vendar/js/script.js??"></script>
+
+  <script type="text/javascript">
+    if (window.addEventListener){           
+    window.addEventListener('resize', setBackground, false);
+} else {
+    window.attachEvent('onresize', setBackground);
+}
+setBackground();
+function setBackground(){
+    document.body.style.backgroundSize =
+        (((( window.screen.width / ( window.screen.width / getImageWidth() )) / 10) > 1 ) ? (( window.screen.width / ( window.screen.width / getImageWidth() )) / 10) : 1) + "%";
+}
+
+function getImageWidth(){
+
+    var imageSrc = document
+                    .body
+                     .style
+                      .backgroundImage
+                       .replace(/url\((['"])(.*?)\1\)/gi, '$2')
+                        .split(',')[0];
+
+    var image = new Image();
+    image.src = imageSrc;
+
+    var width = image.width;
+
+    return width;
+
+}       
+  </script>
+ </body>
+ </html>

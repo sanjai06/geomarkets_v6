@@ -1,0 +1,1548 @@
+@font-face
+{
+    font-family:nexa-light;
+    src : url('../font/Nexa_light.otf')
+}
+@font-face
+{
+    font-family:nexa-bold;
+    src : url('../font/Nexa_Bold.otf')
+}
+
+@font-face
+{
+    font-family:bebasneue-bold;
+    src : url('../font/BebasNeue_Bold.otf')
+}
+@font-face
+{
+    font-family:bebasneue-regular;
+    src : url('../font/BebasNeue-Regular.otf')
+}
+
+body
+{
+    background: #000000;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+
+}
+/*header css*/
+.header_bg
+{
+    background-image: url('../../assert/page_layer/header_bg.png');
+    background-repeat: no repeat;
+    -webkit-background-size: 100% 100%;
+}
+.header_logo
+{
+     width:200px;
+     margin-top:-8px;
+     margin-bottom: 10px;
+}
+.header_button
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    background: #BE7D1D;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    margin-top:-10px;
+    margin-bottom: 10px;
+}
+.icons
+{
+    width: 15px;
+    margin-top: -3px;
+}
+.bar-icon
+{
+    color: #F9EA7E;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+.float-right
+{
+    float:right;
+
+}
+/*slider section start*/
+/*email section slider*/
+.btns
+ {
+    -ms-transform: skewX(20deg); 
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    width: 60%;
+    margin-left: 3vw;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+}
+.btn-text img
+{
+    width: 20px;
+}
+.btn-text
+ {
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    outline: none;
+    border: none; 
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+}
+.skew-right
+{
+     -ms-transform: skewX(-20deg); 
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    text-align: center;
+    font-family: nexa-bold;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    align-items:center;
+}
+.navbar-inverse .navbar-nav>li>a
+{
+    color: #000000;
+}
+.navbar-inverse .navbar-nav>li>a
+{ 
+    color: #000000;
+}
+.navbar-nav>li>a
+{
+ padding-top: 5px; 
+padding-bottom: 5px;
+}
+
+.navbar-nav>li>a:hover
+{
+background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+color: #000000;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: #080808;
+}
+.navbar-toggle
+{
+    margin-top: -28px;
+}
+/*slider content section*/
+
+.text-left
+{
+    text-align: left;
+}
+
+.slider_bg_1
+{
+  background:url('../../assert/slider_set/1.png');
+   
+}
+.slider_bg_2
+{
+  background:url('../../assert/slider_set/2.png');
+   
+}
+.slider_bg_3
+{
+  background:url('../../assert/slider_set/3.png');
+   
+}
+.slider_bg_4
+{
+  background:url('../../assert/slider_set/4.png');
+
+}
+.slider_bg_5
+{
+  background:url('../../assert/slider_set/5.png');
+
+}
+.mt-5
+{
+    margin-top:9em;
+}
+.mt-2
+{
+    margin-top: 2em;
+}
+.start
+{
+    letter-spacing: 10px;
+    font-size: 2.5em;
+    font-family: bebasneue-bold;
+}
+.badge
+{
+    width: 100px;
+    margin-left: 3.5em;
+    margin-top: -3em;
+}
+.text-white
+{
+    color: #ffffff;
+}
+.trade
+{
+    font-size: 3.5em;
+    font-family: bebasneue-bold;
+   font-weight: bold;
+    margin-top: -0.2em;
+   margin-left: -0.5em;
+}
+.font-small-size
+{
+    font-size: .8em;
+}
+.geo_header_text
+{
+    font-size: 4em;
+    font-family: bebasneue-bold;
+   font-weight: bold;
+   margin-top: -0.3em;
+   margin-left: -0.5em;
+ }
+ .geo-header-bar
+ {
+    border-left: 8px solid #f8a716f5;
+    left: 1.1em;
+    height: 200px;
+    font-family:nexa-bold;
+
+ }
+ .header_start_text{
+    top:8vw;
+    color: #f8a716f5;
+    font-size: 2.5em;
+
+ }
+ .trade_mark_button
+ {
+    
+    background: linear-gradient(to left, #C78C16 3%, #F9E97B 26%, #C78C16 100%);
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #F0D45C;
+    border-radius: 5px;
+ 
+ }
+.trade_mark_header_button
+ {
+   
+    font-size: 15px;
+    padding: 6px;
+    font-family:nexa-bold;
+    background: linear-gradient(to left, #C78C16 3%, #F0D45C 100%, #C78C16 100%);
+    position:fixed;
+    top: 83%;
+    left: 16%;
+    z-index: 1;
+    transform: translate(50% 50%);
+ }
+.mar-left-15
+{
+    margin-left: -32em;
+}
+.mr-left-8
+{
+    margin-left: -8em;
+}
+.mr-left-24
+{
+    margin-left: -24em;
+}
+/*slider 2 css*/
+.expert
+{
+    font-size: 4em;
+    font-family: bebasneue-bold;
+     margin-left: -5em;
+     margin-top: -0.3em;
+}
+
+.reviews
+{
+    font-size: 4em;
+    font-family: bebasneue-bold;
+     margin-left: -5em;
+       margin-top: -0.3em;
+}
+.trades
+{
+    font-size: 2.5em;
+   font-weight: bold;
+   margin-top: -0.3em;
+   margin-left: -0.7em;
+}
+.geo-text-mark
+{
+    font-size: 2.5em;
+   font-weight: bold;
+   margin-top: -0.3em;
+   margin-left: -0.7em;
+ }
+/*3 slider css*/
+.starts
+{
+   margin-top: -3.3em;
+    margin-left: -0.7em;
+    font-size: 2.5em;
+    font-family:nexa-bold;
+}
+.start-badge
+{
+    margin-top: -2.9em;
+    margin-left: -1em;
+    font-size: 2.5em;
+    font-family: bebasneue-bold;
+}
+.mar-left-2
+{
+    margin-left: 2px;
+}
+.mar-left-14
+{
+    margin-left: 16px
+}
+.font-nexa
+{
+     font-family:nexa-bold;
+}
+.font-bebasneue
+{
+  font-family: bebasneue-bold;
+
+}
+
+.trade-analytical
+{
+   margin-left: -5em; 
+   font-family: bebasneue-bold;
+    font-size: 4em;
+    margin-top: -0.3em;
+}
+.sliders_logo
+{
+    width: 250px;
+    height: 250px;
+}
+.geo-header-bar-right
+ {
+    border-left: 10px solid #f8a716f5;
+    right: 12em;
+    height: 180px;
+    transform: skew(354deg, 357deg)
+   
+ }
+ .header_start_text{
+    top:8vw;
+    color: #f8a716f5;
+    font-size: 2.5em;
+
+ }
+ /*4 header slider section*/
+.right-bar
+{
+    font-size: 2em;
+    font-family: bebasneue-bold;
+    transform: skew(354deg, 357deg);
+    margin-left: 9em;
+    margin-top: -4.5em;
+}
+
+.right-mobile-terminal
+{
+   font-size: 2em;
+    font-family: bebasneue-bold;
+    transform: skew(354deg, 357deg);
+    margin-left: 10em;
+
+}
+.right-live-support
+{
+   font-size: 2em;
+   font-family: bebasneue-bold;
+   margin-top: 20px;
+   transform: skew(354deg, 357deg);
+   margin-left:9em;
+}
+.geo-header-bar-right
+ {
+    border-left: 10px solid #f8a716f5;
+    right: 12em;
+    height: 180px;
+    transform: skew(354deg, 357deg);
+    margin-left: 9em;
+   
+ }
+ .header_slider_logo
+ {
+    position: absolute;
+    top: 4em;
+    left: 5em;
+ }
+ /*social media icons*/
+.social_media_icons
+{
+     Position: fixed;
+     top: 25%;
+     right: 0%;
+     z-index: 9999;
+     padding: 20px;
+}
+.social_icons
+{
+    background: gray;
+    color: #ffffff;
+    padding: 4px;
+    font-size: 23px;
+}
+.social_media_icons_bg
+{
+    background: linear-gradient(to left, #C78C16 3%, #F0D45C 100%, #C78C16 100%);
+    width: 100%;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.social_icons
+{
+    font-size: 25px;
+    background: gray;
+    color: #ffffff;
+    padding: 4px;
+}
+
+/*about section css*/
+.about_bg
+{
+
+    background-image: url('../../assert/page_layer/about_bg.png');
+    background-repeat: no-repeat;
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+
+}
+.about_text
+{
+    font-size: 14px;
+     font-family: nexa-bold;
+}
+.pt-5
+{
+    padding-top: 5px;
+}
+.pl-5
+{
+    padding-left: 14em;
+}
+h2, h3
+{
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #BE7D1D ;
+    font-family: nexa-bold;
+    text-shadow: 1px 0px #1d0f0ffc;
+/*    transform: skew(166deg);*/
+}
+::selection { background-color: #BE7D1D; }
+.about_text
+{
+    font-size: 14px;
+     font-family: nexa-bold;
+}
+.gray
+{
+    color : #6c757d;
+}
+.swiper
+ {
+      width: 100%;
+    height: 500px;
+ }
+ .height
+ {
+    height: 220px;
+ }
+.blog-box
+{
+    background: #BE7D1D;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    border-radius: 8px;
+    box-shadow: 3px 2px 9px 2px #cccccc;
+    text-align: center;
+    padding: 5px;
+
+}
+.about_sec_icons
+{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 2vw;
+}
+.mar-left-24
+{
+    margin-left: 7em;
+}
+h4,h5
+{
+     font-family: nexa-bold;
+     margin-top: 1vw;
+
+}
+.blog-box-text 
+{ 
+     font-family: nexa-bold;
+     font-size: 14px;
+     padding: 5px;
+}
+.position_relative
+{
+     position:relative;
+}
+/*about end*/
+/*geo bg*/
+.geo_bg
+{ 
+     background-image: url('../../assert/page_layer/geo_bg.png');
+    background-repeat: no-repeat;
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+
+}
+.started_text
+{
+    font-family: nexa-bold;
+  
+}
+.diomand_design
+{
+    background: url(../../assert/page_layer/geo_dm_bg.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    object-fit: cover;
+    z-index: 1;
+}
+.geo_marker_center_img
+{
+    z-index: 2;
+    width: 80px;
+    padding-top: 5vw;
+    margin-top: -20px;
+    margin-left: -1em;
+   
+}
+.geo_mark_cenetr_text
+{
+    color:#000000;
+    margin-top: 0;
+   margin-bottom: 9rem;
+    font-family: nexa-bold;
+   font-weight: bold;
+   margin-left: -0.1em
+}
+.hr_gradient
+{
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    border-top: 7px solid #F9EA7E;
+    width: 45%;
+    font-family: bebasneue-bold;
+
+}
+.started_text
+{
+    color: #BE7D1D ;
+}
+.padding_top-10
+{
+    padding-top: 5em;
+}
+/*testimonal css*/
+.testimonal_bg_img
+{
+    width: 100%;
+    position: static;
+    }
+.testimonal_b
+{
+   padding: 10em;
+    padding-top: 0;
+    padding-bottom: 4em;
+}
+.testimonal_heading
+{
+    color: black;
+    -webkit-text-fill-color: #0000;
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: -18em;
+
+}
+.testimonal_slider
+{
+    position:absolute;
+    z-index:10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+}
+.test_half_img
+{
+    width: 154px;
+}
+.co-work
+{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: nexa-bold;
+}
+.text-left
+{
+    text-align: left;
+}
+.test_content_bg
+{
+    background: linear-gradient(to left, #C78C16 3%, #F9E97B 46%, #C78C16 100%);
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.test_cont_gradient
+{
+     font-size: 11px;
+    border: 1px solid #BB7911;
+    border-top: 1px solid #C78C16;
+    background: linear-gradient(to left, #C78C16 3%, #F9E97B 46%, #C78C16 100%);
+    box-shadow: 0px 1px 10px #bb7911;
+    font-family:  nexa-light;
+    border-radius: 5px;
+}
+.client_details
+{
+    font-family: nexa-bold;
+    font-size: 1.6em;
+}
+.hr_black_bar
+{
+    background: linear-gradient(to left, #C78C16 3%, #F9E97B 46%, #C78C16 100%);
+    border-top: 5px solid #000000;
+    width: 30%;
+}
+.footer_bg
+{
+    background: url("../../assert/page_layer/footer_bg.png");
+    background-repeat: no-repeat;
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+
+.p-100
+{
+    padding: 100px;
+    padding-bottom: 0px;
+    padding-bottom:55px;
+}
+h5
+{
+    font-size: 1em;
+}
+.footer_logo
+{
+    text-align: center;
+    width: 150px;
+}
+.footer_text
+{
+    font-size: .9em;
+    color:white;
+    text-align: left;
+    padding-left: 4em;
+    font-family: nexa-bold;
+}
+.quick_text
+{
+     text-align: left;
+     font-size: .9em;
+     padding-left: 4.5em;
+     font-family: nexa-bold;
+
+}
+.svg-inline--fa
+{
+    height: 0.8em;
+}
+.pt
+{
+    padding-top: 1.8rem !important;
+}
+.mail_id
+{
+    display: flex;
+    width: 100%; 
+    font-size: 0.8em;
+
+}
+.pt button
+{
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.left_button button
+{
+    background: #765636;
+  background: linear-gradient(to left, #765636 0%, #DFD2A4 50%, #838150 100%);
+}
+.right_button
+{
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+}
+.phone_bg_gd
+{
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    border-radius: 3px;
+    margin-left: 1vw;
+    margin-top: 12px;
+
+}
+.phone_icon
+{
+      
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.phone_number
+{
+    font-family: nexa-bold;
+    font-size: 0.9em;
+    padding: 0px;
+    margin:0px;
+    margin-left: 20px;
+}
+.email_box
+{
+        padding: 20px;
+
+}
+.address
+{
+    font-size: 1em;
+    text-align: left;
+}
+.hr
+{
+    background: linear-gradient(to left, #F9EA7E 10%, #F0D96E 90%);
+  height: 5px;
+  margin-left: 1vw;
+}
+.about_text_footer
+{
+    font-size: 1em;
+    font-family: nexa-bold;
+    color: #ffffff;
+}
+.small_font
+{
+    font-size: 0.8em
+}
+.small_font_color_gradient
+{
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #BE7D1D ;
+    font-family: nexa-bold;
+    transform: skew(166deg);
+}
+.footer_bottom_img
+{
+    width: 100%;bottom:3px;
+    z-index: 9999;
+}
+.gradient_footer
+{
+
+}
+.all_rights_reserved {
+    border-bottom: 25px solid #F9EA7E;
+    border-left: 129px solid transparent;
+    border-right: 134px solid transparent;
+    height: 0;
+    width: 71%;
+     margin-left: 18.6%;
+     transform: rotate(180deg);
+    
+    margin-top: -2vw;
+    }
+.gradient_footer p
+{
+    transform: rotate(180deg);
+    margin-top:1px;
+    font-family: nexa-bold;
+    font-size: 0.8em;
+
+}
+.parg
+{
+    margin-left: 1vw;
+}
+
+.social_media_footer_icons_bg {
+    background: linear-gradient(to left, #C78C16 3%, #F0D45C 100%, #C78C16 100%);
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+ }
+.center_display
+{
+    display:flex;
+    justify-content: center;
+}
+.margin-right-5
+{
+    margin-right:5px
+}
+.footer_bottom_img
+{
+    margin-top:-7em;
+}
+input
+{
+    border: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+/*menu pages css*/
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.about_section
+{
+    padding: 20px;
+}
+.about_h5
+{
+      font-family:nexa-bold;
+      font-size: 14px;
+      padding: 10px;
+      color: #000000;
+}
+.about_content_bg
+{
+   background:#dddd;
+   border-top-left-radius:5em;
+   border-bottom-right-radius:5em;
+   box-shadow: 2px 3px 4px 3px #dddddd;
+}
+.border
+{
+    border-bottom: 5px solid #C78C16;
+    width: 104px;
+    background: linear-gradient(to left, #C78C16 3%, #F0D45C 100%, #C78C16 100%);
+}
+.cont_parg
+{
+    font-size: 1.2em;
+    padding: 0px;
+    font-family:nexa-bold;
+    line-height: 30px;
+
+}
+.mt-4
+{
+    margin-top: 5em;
+}
+.about_header_video
+{
+    width: 100%;
+}
+.header-service_bg
+{
+  width:100%;
+}
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #000000;
+}
+.geo_services
+{
+    position: absolute;
+    top:43%;
+    left: 20%;
+    font-size: 5em;
+     font-family: bebasneue-bold;
+}
+.geo_services_image
+{
+    position: absolute;
+    top:30%;
+    left: 40%;
+}
+.geo_service_service{
+    position: absolute;
+    top:54%;
+    left: 20%;
+    font-size:5em;
+     font-family: bebasneue-bold;
+}
+.geo_market_service
+{
+  position: absolute;
+  top:66%;
+  left: 20%;
+  font-size: 5em;
+   font-family: bebasneue-bold;
+}
+.pt-2
+{
+     padding-top: 2em;
+}
+.bg-color{
+    background:#CDCECE;
+}
+.service_content
+{
+    padding: 10px;
+}
+.service_parg
+{
+    font-size: 1em;
+    margin:0px;
+    line-height: 27px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+}
+.service-image
+{
+     width:100%;
+}
+.border{
+     margin-left: 10px;
+     border-bottom: 2px solid BE7D1D;
+     width: 8em;
+     background: #BE7D1D;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+
+}
+
+.contact_hr
+{
+    margin-top: 0px;
+    border-top: 2px solid #;
+    border-top: 3px solid #BE7D1D;
+    width: 10em;
+}
+.mt-top-2
+{
+    margin-top: -2em;
+}
+.pt-top-2
+{
+    padding-top: 2em;
+}
+
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+.contact_details
+{
+    margin: 0px;
+    padding: 20px;
+    line-height: 30px;
+
+}
+/*faq css*/
+
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-heading {
+    padding: 20px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.panel {
+    margin-bottom: 20px !important;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 15px 16px 13px 8px rgb(4 4 4 / 5%);
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #00bcd4;
+    text-align: center;
+    color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 9999;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  overflow: auto; 
+
+}
+
+/* Modal Content */
+.modal-content {
+/*  background-color: #fefefe;*/
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close-model {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -1em;
+}
+
+.close-model:hover,
+.close-model:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.input-group
+{
+    margin-bottom: 15px;
+}
+.submit-form-button
+{
+    outline: none;
+    border: none;
+    background: blue;
+    width: 200px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.submit-form-button:hover
+{
+     background: #000000;
+     color: #ffffff;
+}
+/*media queires*/
+@media(max-width:768px)
+
+{
+    #login-button
+    {
+        display: none;
+    }
+    #menu_login_details
+    {
+        display: none;
+    }
+    .btn-text img
+    {
+        width: 10px;
+    }
+    .mar-left-15
+    {
+        margin-left: 0em;
+       
+    }
+    .start
+    {
+        font-size: 3em;
+        margin-left: 0em;
+        
+    }
+    .trade
+    {
+        font-size: 3em;
+        margin-left: 0em;
+    }
+    .geo_header_text 
+    {
+        font-size: 3em;
+        margin-left: 0em;
+    }
+   .trade_mark_header_button
+   {
+    top: 50%;
+    left: 18%;
+    }
+    .expert
+    {
+        margin-left: 2em;
+        font-size: 3em;
+    }
+    .trade-analytical
+    { 
+         margin-left: 2em;
+        font-size: 3em;
+
+    }
+    .reviews
+    {
+         margin-left: 2em;
+        font-size: 3em;
+    }
+    .starts
+    {
+        margin-top: -6em;
+        margin-left: 2.7em;
+        font-size: 1.5em;
+    }
+    .start-badge
+    {
+        margin-top: -2.9em;
+        margin-left: 2.2em;
+        font-size: 1.5em;
+    }
+    .trades
+    {
+        font-size: 1.5em;
+        margin-top: 0em;
+         margin-left: 2.7em;
+    }
+    .geo-text-mark
+    {
+        margin-left: 2.7em;
+         font-size: 1.5em;
+    }
+    .mb-5
+    {
+        margin-bottom: 3em;
+    }
+    .video_size
+     {
+        margin-top: -1.5em;
+        width: 100%;
+    }
+    .geo-header-bar-right
+    {
+        margin-left: 1em;
+    }
+    .right-mobile-terminal 
+    {
+        margin-left: 2.5em;
+        margin-top: -1em;
+        font-size: 1.5em;
+    }
+    .right-live-support
+    {
+        font-size: 1.5em;
+        margin-left: 3em;
+        margin-bottom: 2em;
+    }
+    .right-mobile-terminal
+    {
+        margin-left: 3em;
+        margin-top:0em;
+        font-size: 1.5em;
+    }
+    .right-bar
+    {
+        font-size: 1.5em;
+        margin-top:-6em;
+        margin-left: 3em;
+    }
+    .social_media_icons
+    {
+         top: 17%;
+
+    }
+    .mr-left-0
+    {
+        margin-left: 0;
+    }
+    .mr-left-24
+    {
+        margin-left: 0;
+    }
+    .pl-mb-5
+    {
+        padding-left: 5em;
+        padding-right: 5em;
+
+    }
+    .about_head
+    {
+        text-align: center;
+        font-size: 22px;
+    }
+    .mt-mb-5
+    {
+        margin-top: 5em;
+    }
+    .mt-3 
+    {
+        margin-top: 25px;
+        margin-left: 5em;
+    }
+        
+ .geo_marker_center_img
+    {
+        margin-top: 27px;
+        margin-left: 0em;
+    }
+ .geo_mark_cenetr_text
+     {
+        margin-left: 0;
+     }
+ .diomand_design
+ {
+    margin-top: 0px;
+    padding: 0px;
+
+ }
+ .geo_bg
+ {
+    background: none;
+
+ }
+ .heart-beat-1
+     {
+        margin-left: 7em;
+     }
+.p-5
+     {
+        padding-bottom: 1em;
+     }
+.testimonal_b
+    {
+    padding: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+.testimonal_bg_img 
+    {
+        height: 500px;
+    }
+.client_details
+    {
+        margin-top: 31px;
+        font-size: 16px;
+    }
+.testimonal_heading
+{
+    margin-top:-14em;
+}
+/*.about_bg
+{
+    background: #E8E8E8;
+    border-radius: 10px;
+
+}*/
+/*footer section css*/
+.p-100
+{
+    
+    padding: 0px;
+    padding-top: 55px;
+
+}
+.footer_bg
+{
+    background: none;
+}
+.footer_text
+{
+    text-align: left;
+    padding-left: 0;
+}
+.mb-left
+{
+    text-align:left;
+}
+.quick_text
+{
+    padding-left: 0;
+}
+.phone_icon 
+{
+    width: 15px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.email_box
+{
+    padding: 8px;
+}
+.phone_number
+{
+    font-size: 10px;
+/*    margin-left: 6px;*/
+}
+ .mt-2px
+    {
+        margin-top: 2em;
+    }
+#footer_web_image
+{
+    display: none;
+}
+.footer_mb_bg
+{
+    background: #BE7D1D;
+    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+    bottom: 0;
+    padding: 5px;
+    line-height: 20px;
+}
+.privacy_content
+{
+    margin:0;
+    padding: 0px;
+     font-family: nexa-bold;
+     font-size: 12px;
+}
+.icons
+ {
+    width: 11px;
+    margin-top: -3px;
+}
+.header_button
+{
+    font-size: 8px;
+}
+.header_bg
+{
+    background: none;
+}
+.geo_services
+{
+   top: 6em;
+   font-size: 2em;
+}
+.geo_services_image
+{
+    top: 11em;
+    left: 10em;
+    width: 65px;
+}
+.geo_service_service{
+    top: 7em;
+   font-size: 2em;
+}
+.geo_market_service
+{
+  top: 8em;
+   font-size: 2em;
+}
+.line-hight
+{
+    line-height: 30px;
+}
+.map_img
+{
+    width: 100%;
+}
+.footer_bg
+{
+    padding: 1.5em;
+}
+ .skew-right
+ {
+    width: 200px;
+    margin-left: 50px;
+    margin-left: 75px;
+ }
+ .navbar-toggle
+ {
+    padding: 5px 6px;
+ }
+ .btn-text
+ {
+    font-size: 11px;
+ }
+ .diomand_design
+{
+    background-size: 100% 100%;
+}
+.about_bg
+{
+    background: #BFBFBF;
+    border-radius: 21px;
+}
+.submit-form-button
+{
+    width: 150px;
+}
+}
+
+@media(min-width:768px)
+{
+    .container-fluid
+    {
+        width: 100%;
+    }
+    #login_button
+    {
+        display: none;
+    }
+    #menu_login_button
+    {
+        display: none;
+    }
+    .video_size
+     {
+        margin-top: -1.5em;
+        width: 1300px;
+    }
+    .mt-7
+    {
+        margin-left: 7em;
+    }
+   
+    .mt-2
+    {
+        margin-top: 2em;
+    }
+     .p-5
+     {
+        padding-bottom: 4em;
+     }
+     .pg-bot
+     {
+        padding-bottom: 18em;
+     }
+    /* .mr-7
+     {
+        margin-top: 7em;
+     }*/
+     .text-align
+     {
+        text-align: center;
+     }
+     #mobile_view_bottom
+     {
+        display: none;
+     }
+     .header-service_bg
+    {
+      height: 400px;
+    }
+    .line-hight
+    {
+        padding-left: 0px;
+        line-height: 30px;
+    }
+    .map_img
+    {
+        width: 100%;
+    }
+    #menu_login_details
+    {
+        display: block;
+    }
+    .navbar-inverse
+    {
+        background-color: transparent;
+    }
+    .navbar
+    {
+        margin-bottom: 0px;
+        min-height: 0;
+    }
+    .navbar-nav>li
+    {
+        margin-left: 4px;
+    }
+     .geo_mark_cenetr_text
+     {
+        font-size:12px 
+    }
+}
+
+
+@media(min-width:1300px)
+{
+    .geo_marker_center_img
+    {
+        width: 61px;
+        padding-top: 7vw;
+        margin-top: -61px;
+        margin-left: -2em;
+    }
+    .geo_mark_cenetr_text
+     {
+        margin-top: 11px;
+        margin-bottom: 11rem;
+        margin-left: -2.2em;
+    }
+    .p-5
+    {
+        padding-top: 4em;
+    }
+}

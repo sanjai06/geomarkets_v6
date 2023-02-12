@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+</head>
+<body>
+<main class="main">
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?nature" alt="Image Slider">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt="Image Slider">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?water" alt="Image Slider">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?animal" alt="Image Slider">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?travel" alt="Image Slider">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/1280x720/?flower" alt="Image Slider">
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Scrollbar -->
+      <div class="swiper-button-next">
+        <i class="fas fa-chevron-circle-right arrow-icon"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="fas fa-chevron-circle-left arrow-icon"></i>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    // Swiper Configuration
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  freeMode: true,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 1
+    },
+    700: {
+      slidesPerView: 1
+    }
+  }
+});
+
+  </script>
+</main>
+</body>
+</html>

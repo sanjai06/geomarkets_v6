@@ -1,0 +1,139 @@
+  .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+/*
+    .slick-slide img {
+      width: 100%;
+      height: 100%;
+    }
+*/
+    .swiper-slide img{
+        max-width:100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    /*swiper css*/
+
+
+.swiper-slide
+ {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after  
+{
+    color: #cb913b;
+    font-size: 2em;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+{
+  color: #cb913b;
+  font-size: 2em;
+}
+
+
+.swiper-pagination-bullet
+{
+/*  opacity:var(--swiper-pagination-bullet-inactive-opacity, .9);*/
+  background: linear-gradient(to left, #C78C16 3%, #F9E97B 26%, #C78C16 100%);
+
+}
+
+/*animation css*/
+.heart-beat-1
+{
+  transition: 0.3s;
+}
+/* Heart beat animation */
+.heart-beat-1:hover {
+  
+   transform: scale(1.06);
+}
+
+
+.heart-beat-5
+{
+  transition: 0.3s;
+}
+/* Heart beat animation */
+.heart-beat-5:hover {
+  
+   transform: scale(1.05);
+}
+
+.bounce-left-delay-1
+{
+  animation-delay: 5s;
+}
+
+.bounce-left-delay-2
+{
+  animation-delay: 5s;
+}
+
+.bounce-left-delay-3
+{
+  animation-delay: 5s;
+}
+.bounce-left-delay-4
+{
+  animation-delay: 8s;
+}
+.bounce-left-delay-5
+{
+  animation-delay: 8s;
+}
+.bounce-left-delay-6
+{
+  animation-delay: 8s;
+}
+.bounce-left-delay-7
+{
+  animation-delay: 8s;
+}
+.bounce-left-delay-8
+{
+  animation-delay: 8s;
+}
+

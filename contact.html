@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEO MARKET</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+   <link rel="stylesheet" type="text/css" href="vendar/css/geostyle.css">
+    <link rel="stylesheet" type="text/css" href="vendar/css/sliders.css">
+    <!-- animation css link -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<!--container start  -->
+<div class="container">
+  <!-- header section start -->
+    <div class="header_bg">
+      <!-- header row section start -->
+        <div class="row p-18px p-5px">
+             <!-- header start -->
+             <div class="col-xs-12 col-lg-12 col-sm-12 pt-0">
+                <div class="col-sm-4  col-xs-12 col-lg-4 logo-align">
+                  <img src="assert/page_layer/geo_logo.png" class="header_logo">
+                </div>
+                <!-- empty row start-->
+                <div class="col-lg-1 col-sm-1 "></div>
+                <!-- empty row end-->
+                <!-- login button -->
+                    <div class="col-xs-12 col-lg-6 col-sm-7  font-nexa" >
+                       <div class="row pt-10px mt-5px p-5px">
+                           <a href="https://secure.geomarkets.com/user/">
+                              <div class=" col-sm-4 col-xs-4 mb-pt-0px">
+                              <button class="header_button ">
+                                <img src="assert/icons/1.png" class="icons"> CLIENT  LOGIN
+                              </button>
+                            </div>
+                           </a>
+                            <a href="https://secure.geomarkets.com/partner/">
+                              <div class=" col-sm-4 col-xs-4 mb-pt-0px">
+                                 <button class="header_button">
+                                <img src="assert/icons/2.png" class="icons"> PARTNER  LOGIN
+                              </button>
+                            </div>
+                            </a>
+                            <div class=" col-sm-4 col-xs-4 mb-pt-0px">
+                                 <button class="header_button" id="modelbox">
+                                    <img src="assert/icons/3.png" class="icons"> REGISTER
+                              </button>
+                            </div>
+                      </div>
+                    </div>   
+                </div>
+             <!-- header end -->
+       <!-- header row section end -->
+        </div>
+    </div>
+  <!-- header section end -->
+  <!-- Model Box start -->
+    <div id="myModal" class="modal" >
+        <!-- Modal content -->
+        <div class="modal-content">  
+        <div class="row">
+          <!-- account section -->
+            <div class="col-lg-6  col-sm-6 col-xs-6">
+              <h4 class="text-center">Trader Account</h4>
+            </div>
+             <div class="col-lg-6 col-sm-6 col-xs-6">
+              <h4 class="text-center">Partner Account</h4>
+            </div>  
+            <!-- account section -->
+         </div>
+         <!-- account row end -->
+         <div class="row webview-content" >
+          <!--first name  -->
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input class="form-control" required="" placeholder="Enter First Name" id="FirstName" name="FirstName" type="text">
+                  </div>
+              </div>
+            <!--first name end  -->
+            <!--last name start -->
+            <div class="col-md-6 col-sm-6  col-xs-12">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input class="form-control" placeholder="Enter Last Name" id="LastName" name="LastName" type="text">
+                </div>
+            </div>
+            <!-- last name end -->
+            <!-- select gender start-->
+              <div class="col-md-6 col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-anchor"></i></span>
+                  <select name="country" required="" id="Gender" class="form-control">
+                      <option value="">Select Gender</option>
+                      <option value="Male"> Male </option>
+                      <option value="Female"> Female </option>
+                  </select>
+                </div>
+              </div>
+               <!-- select gender start-->
+               <!-- date of birth -->
+               <div class="col-md-6 col-sm-6">
+                  <div class="input-group">
+                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                  <input class="form-control" required="" placeholder="Date of Birth" id="txtBirthDate" name="BirthDate" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" type="text">
+                  </div>
+              </div>
+               <!-- date of birth end -->
+               <!-- acc sign -->
+                 <div class="col-md-6 col-sm-6">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-edit"></i></span>
+                        <select required="" id="account" name="AccountCode" class="form-control">
+                          <option value="">Which account are you signing up for?</option>
+                          <option value="Individual"> Trading Account </option>
+                          <option value="Corporate"> Corporate Account </option>
+                          <option value="Trust"> Trust Account </option>
+                        </select>
+                      </div>
+                </div>
+                <!-- acc sign end-->
+                <!-- email section start -->
+                <div class="col-md-6 col-sm-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input class="form-control" required="" placeholder="Enter Email Address" name="Email" id="email" type="email">
+                     </div>
+                </div>
+                <!-- email section end -->
+                <!-- country code section start -->
+                <div class="col-md-6 col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                        <select required="" id="telNumberCountryCode" name="TelNumberCountryCode" class="form-control">
+                            <option value="">Select country code</option>
+
+                          </select>
+                    </div>
+                      <input type="hidden" id="Citizenship" name="Citizenship">
+                      <input type="hidden" id="ResidenceCountry" name="ResidenceCountry">
+                </div>
+                <!-- country code section end -->
+                <!-- phone number start -->
+                  <div class="col-md-6 col-sm-6">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                      <input class="form-control" placeholder="Enter Mobile No." id="telNumber" name="TelNumber" type="number" required="">
+                    </div>
+                  </div>
+                <!-- phone number end -->
+                <!-- country start -->
+                <div class="col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                    <select id="ResidentialCountry" name="ResidentialCountry" class="form-control">
+                        <option>Select country</option>
+                    </select>
+                </div>
+                </div>
+                <!-- country end -->
+          </div>
+          <!-- form row end -->
+          <!-- submit button start -->
+            <div align="center" >
+              <button class="submit-form-button">Submit</button>
+          </div>
+          <!-- submit button end -->
+                 <span class="close-model">&times;</span>
+
+        </div>
+        <!-- mymodel end -->
+    </div>
+  <!-- Model Box End -->
+  <!-- Header section start -->
+  <section>
+  <!-- mail & nav section module start -->
+  <div class="container" style="position:absolute;z-index: 10;margin-top: -1px;">
+     <div class="col-xs-12 col-lg-12 col-sm-12 menu-position">
+     <div class="row">
+      <!-- mail section start -->
+          <div class="col-xs-7 col-lg-5 col-sm-5">
+              <div class="btns text-center">
+                <button class="btn-text">           
+                  <img src="assert/icons/14.png" ><span> support@geomarkets.com </span>        
+                </button>
+              </div>
+          </div>
+      <!-- mail section end -->
+      <!-- menu start -->
+                <div class="col-sm-7 col-lg-7 col-xs-12 pd-0">
+                  <nav class="navbar navbar-inverse">
+                      <div class="navbar-header">
+                              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                              </button>
+                      </div>
+                      <div id="navbarCollapse" class="collapse navbar-collapse">
+                          <ul class="nav navbar-nav">
+                              <li class=" skew-right"><a href="index-v1.html">Home</a></li>
+                              <li class="skew-right"><a href="about.html">About</a></li>
+                              <li class="skew-right"><a href="contact.html">Contact</a></li>
+                              <li class="skew-right"><a href="service.html">Services</a></li>
+                              <li class="skew-right"><a href="Faq.html">Faq</a></li>
+                              <li class="skew-right"><a href="#">Platform</a></li>
+                              <li class="skew-right"><a href="#">Market</a></li>
+                              <li class="skew-right"><a href="#">Instruments</a></li>              
+                           </ul>
+                      </div>
+                  </nav>
+                </div>
+                 <!-- menu end -->
+     </div>
+  </div>
+  </div>
+  <!-- mail & nav section module start -->
+<!-- slider section start -->
+ <section>
+   <img src="assert/page_layer/contact.jpg" class="header-bg"> 
+    <div class="about_header">
+      <h1 class="text-white  about-content animate__animated animate__backInDown animate__delay-1s  1s">CONTACT OUR </h1> 
+      <h1 class="text-white  about-content animate__animated animate__backInDown animate__delay-1s  1s">
+        GEO MARKETS
+      </h1> 
+    </div>
+ </section>
+<!-- slider section end -->
+<section class="bg-color ">
+   <div class="text-center">
+    <div class="contact-view">
+       <p class="location text-center">HAVE ANY QUESTIONS?</p>
+    </div>
+    <div align="center"><div class="contact-under-line" style="border:"></div></div>
+  <div class="row pt-3em">
+   <div class="col-lg-1 col-xs-1 col-sm-1"></div>
+   <div class="col-lg-10 col-xs-12 col-sm-10 text-center">
+     <div class="row">
+       <div class="col-xs-12 col-lg-4 col-sm-4 ">
+         <div class="box heart-beat-5">
+           <img src="assert/icons/12.png" class="contact-img">
+            <h4 class="contact-details">PHONE</h4>
+            <p class="contact_details">+230 5869 0066</p>
+         </div>
+       </div>
+       <div class="col-xs-12 col-lg-4 col-sm-4">
+        <div class="box heart-beat-5">
+           <img src="assert/icons/14.png" class="contact-img">
+         <h4 class="contact-details">EMAIL</h4>
+            <p class="contact_details">support@geomarkets.com</p>
+       
+        </div>
+        </div>
+       <div class="col-xs-12 col-lg-4 col-sm-4 ">
+        <div class="box heart-beat-5">
+          <img src="assert/icons/13.png" class="contact-img">
+         <h4 class="contact-details">ADDRESS</h4>
+         <p class="contact_details">Level 3, Ebene House, Hotel Avenue 33 Cybercity Ebene, 72201 - MAURITIUS</p>
+       
+        </div>
+        </div>
+     </div>
+   </div>
+   <div class="col-lg-1 col-xs-1 col-sm-1"></div>
+
+  </div>
+  <!-- LOCATION -->
+
+  <p class="location pt-2em">LOCATION</p>
+      <div align="center"><div class="location-under-line" style="border:"></div></div>
+
+ <div class="text-center ">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7220.245240119259!2d55.263353!3d25.199087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f482fc30815567a!2sDesco%20Copy%20%26%20Print%20Center%20-%20Photo%20Studio!5e0!3m2!1sen!2sin!4v1673000125051!5m2!1sen!2sin"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map_img"></iframe>
+ </div>
+</section>
+<!-- footer section start -->
+<footer class="footer_bg" >
+  <div class="footer_padding">
+    <div class="row">
+      <!-- col 1 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">About Company</p>
+           <div class="footer-border-gradient"></div>
+           <div class="mar-10"></div>
+              <img src="assert/page_layer/footer_logo.png" class="footer_logo mb-left">
+               <div class="mar-10"></div>
+              <p class="footer-about-content" >
+
+              Geo Markets Provides you best trading conditions which is very fast and flexible. We are the largest and respected firms in forex industry since 2010. Simple Trading environment which is created by experts to make your work simple.
+            </p>
+             <div class="mb-bottm-footer"></div>
+        </div>
+      <!-- col 2 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Quick links</p>
+           <div class="footer-border-gradient"></div>
+           <div class="mar-10"></div>
+             <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link" >
+                      <i class="fa-solid fa-greater-than "></i> 
+                        About  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Account Types  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Faq  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text"> 
+                  <span class="footer-link"> 
+                    <i class="fa-solid fa-greater-than "></i> Privacy Policy 
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        Terms of Business  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+                <div class="mb-bottm-footer"></div>
+              <!--link section end  -->
+      </div>
+      <!-- col 3 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Trade Platform</p>
+            <div class="footer-border-gradient"></div>
+            <div class="mar-10"></div>
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MT5 Pc Terminal  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link" >
+                      <i class="fa-solid fa-greater-than "></i> 
+                         MT5 Mobile Terminal  
+                  </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MT5 Web Terminal   
+                  </span>
+                </div>
+
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text"> 
+                  <span class="footer-link"> 
+                    <i class="fa-solid fa-greater-than "></i> 
+                      PAMM
+                    </span>
+                </div>
+                <div class="mar-15"></div>
+              <!--link section end  -->
+              <!--link section start  -->
+                <div class="pt text-white quick_text">
+                  <span class="footer-link">
+                      <i class="fa-solid fa-greater-than "></i> 
+                        MAM   
+                  </span>
+                </div>
+                <div class="mar-10"></div>
+                 <div class="mb-bottm-footer"></div>
+              <!--link section end  -->
+      </div>
+      <!-- col 4 -->
+        <div class="col-sm-3 col-xs-12 col-lg-3">
+           <p class="foooter-head">Subscribe</p>
+            <div class="footer-border-gradient"></div> 
+            <div class="mar-10"></div>
+            <div class="pt mail_id">
+              <input type ="text" class="left_button" placeholder="ENTER YOUR EMAIL ID" value="">
+              <button class="right_button">SUBMIT
+              </button>
+           </div>
+             <div class="mar-29"></div>
+
+           <p class="foooter-head">Geo Market at Social
+            <p class="foooter-head">Media</p></p>
+            <div class="footer-border-gradient"></div> 
+             <div class="mar-29"></div>
+
+            <div style="display: flex;">
+             <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/t-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/li-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/q-t.png" class="social_icons">
+              </div>
+              <div class="marg-bottm-5"></div>
+              <div class="social_media_icons_vertical_bg">
+                <img src="assert/icons/u-t.png" class="social_icons red">
+              </div>
+            </div>
+      </div>
+    </div>
+
+ <div class="mar-20"></div>
+     <!-- gmail login start -->
+    <div class="row">
+      <div class="col-lg-6  col-sm-6  col-xs-12 mt-bot">
+        <div class="phone_bg_gd heart-beat-5">
+            <div class="row">
+               <div class="col-sm-3 col-lg-3 col-xs-3">
+                  <div class="pad-10">
+                     <img src="assert/icons/12.png" class="phone_icon" >
+                  </div>
+                </div>
+                  <div class="col-sm-9 col-lg-9 col-xs-9 email_box">
+                    <p class=" phone_number mr-left-2">PHONE  &nbsp;: +230 5869 0066</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+      <div class="col-lg-6  col-sm-6  col-xs-12 ">
+        <div class="phone_bg_gd heart-beat-5">
+            <div class="row">
+               <div class="col-sm-3 col-lg-3 col-xs-3">
+                  <div class="pad-10">
+                     <img src="assert/icons/14.png" class="phone_icon " >
+                  </div>
+                </div>
+                  <div class="col-sm-9 col-lg-9 col-xs-9 email_box">
+                    <p class=" phone_number mr-left-2 mb-pad">EMAIL  &nbsp;: support@gmail.com</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="mar-10"></div>
+       <div class="row">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+           <div class="phone_bg_gd heart-beat-5">
+              <div class="row pt-17 ">        
+                 <div class="col-sm-1 col-lg-1 col-xs-2">
+                    <div class="pad-10">
+                      <img src="assert/icons/13.png" class="phone_icon mb-icon">
+                    </div>
+                  </div>
+                    <div class="col-sm-11 col-lg-11 col-xs-10 email_box">
+                      <p class=" phone_number mb-mb-10">LEVEL 3 EBENE HOUSE, HOTEL AVENUE  33 CYBERCITY  EBENE, 72201 - MARUTIS.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mar-20"></div>
+          <div class="footer-gradient-border"></div> 
+          <div class="mar-20"></div>
+          <!-- content section -->
+          <div>
+              <p class="footer-about-parg">Geomarkets is authorized and regulated in various jurisdictions.</p>
+               <div class="mar-20"></div>
+          <!-- content section -->
+              <p class="footer-about-parg">Geomarkets Ltd <a href="https://www.geomarkets.com" class="color-code" target="blank">( https://www.geomarkets.com )</a> with Registration number GBC189088 , Registered and Physical office address Level 3, Ebene House, Hotel Avenue, 33 Cybercity Ebene, 72201, Mauritius, regulated by the Financial Services Commission Mauritius with <span style="color: #BE7D1D ;">License number GV22200356.</span></p>
+              <div class="mar-20"></div>
+              <p class="footer-about-parg">Earnex DMCC  <a href="https://www.geomarkets.com" class="color-code" target="blank">( https://www.earnex.ae )</a> with Registration number DMCC0548 , Registered and Physical office address Unit 3001, Fortune Tower, JLT, Dubai is authorised and regulated by the Securities and Commodities Authority with <span style="color: #BE7D1D ;">License number 607017.</span> </p>
+              <div class="mar-20"></div>
+              <div class="footer-gradient-border"></div> 
+              <div class="mar-20"></div>
+
+               <p class="footer-about-parg font-12">RISK WARNING : Trading Forex and Leveraged Financial Instruments involves significant risk and may end in the loss of your invested capital. You should not invest more than you'll afford to lose and should make sure that you fully understand the risks involved. Trading leveraged products won't be suitable for all investors.Before trading, please take into concern your level of experience, investment objectives and ask independent financial advice if necessary.It's the responsibility of the Client to determine whether he/she is permitted to use the services of the Geo Markets brand based on the legal requirements based on country of residence.</p>
+                <div class="mar-20"></div>
+                <div class="mar-20"></div>
+                <i>
+                   <p class="footer-about-parg font-12 color-code">"Geo markets trades does not offer its services to residents of certain areas like Afghanistan, Belgium, Bosnia & Herzegovina, Burundi, Eritrea, Gaza Strip, Haiti, Iran, Iraq, Japan, Lao, Libya, Myanmar, North Korea, Somalia, South Sudan, Sudan, Syria, USA, Venezuela, West Bank and Yemen."</p>
+                  
+                </i>
+              </div>
+              <br/><br/><br/>
+            <div class="row" id="web_view">
+              <div class="col-lg-2 col-sm-2"></div>
+              <div class="col-xs-12 col-sm-5 col-lg-5">
+                 <div class="privacy_content_bg">
+                  <p class="footer_privacy"> &#169; All Rights Reserved,Powered by Geo Markets Itd, Mauritius.
+                    
+                 </div>
+              </div>
+               <div class="col-xs-12 col-sm-5 col-lg-5">
+                <p class="footer_privacy">*Privacy Policy/Terms Of Business </p> 
+               </p>
+              </div>
+            </div>
+          </div>
+   
+</footer>
+
+<!--  mobile view footer section-->
+  <div class="text-center footer_mb_bg" id="mobile_view_bottom">
+     <p class="privacy_content">*Privacy Policy/Terms Of Business </p> 
+     <p class="privacy_content">&#169; All Rights Reserved By Geo Markets itd, </p>    
+  </div>
+    <!-- all rights reserved end -->
+
+<!--container end  -->
+</div>
+
+<!-- jqury plugin  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- custom javascript -->
+  <script type="text/javascript" src="vendar/js/script.js"></script>
+</body>
+</html>
