@@ -20,6 +20,10 @@
     src : url('../font/BebasNeue-Regular.otf')
 }
 
+*{
+    font-size: 50%;
+}
+
 body
 {
     background: #000000;
@@ -34,7 +38,7 @@ body
 {
     background-image: url('../../assert/page_layer/header_bg.png');
     background-repeat: no repeat;
-    -webkit-background-size: 100% 100%;
+    
 }
 .header_logo
 {
@@ -788,10 +792,7 @@ h5
     width: 100%;bottom:3px;
     z-index: 9999;
 }
-.gradient_footer
-{
 
-}
 .all_rights_reserved {
     border-bottom: 25px solid #F9EA7E;
     border-left: 129px solid transparent;
@@ -973,7 +974,7 @@ a:hover
 .contact_hr
 {
     margin-top: 0px;
-    border-top: 2px solid #;
+    border-top: 2px solid ;
     border-top: 3px solid #BE7D1D;
     width: 10em;
 }

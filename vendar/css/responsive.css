@@ -40,20 +40,9 @@ padding: 0px;
 margin: 0px;
 user-select: none;
 cursor: pointer;
-/*zoom: 0.5;
--ms-zoom: 0.5;
--webkit-zoom: 0.5;
--moz-transform:  scale(0.5,0.5);
--moz-transform-origin: left center;
-*/
 }
 
-.container-fluid
-{
-    overflow: hidden;
-    padding: 0;
-    margin:0;
-}
+
 
 
 /*header css*/
@@ -61,7 +50,6 @@ cursor: pointer;
 {
 background-image: url('../../assert/page_layer/header_bg.png');
 background-image: no-repeat;
--webkit-background-size: 100% 100%;
 }
 
 
@@ -315,7 +303,7 @@ background-image: no-repeat;
 .swiper
 {
   width: 100%;
-  height: 460px;
+  height: 500px;
 }
 
 /*slider 1 css*/
@@ -871,19 +859,7 @@ h4
     border-bottom-right-radius: 5px;
     width: 150px;
 }
-/*.test_cont_gradient
-{
-     font-size: 11px;
-    border: 1px solid #BB7911;
-    border-top: 1px solid #C78C16;
-    background: linear-gradient(to left, #C78C16 3%, #F9E97B 46%, #C78C16 100%);
-    box-shadow: 0px 1px 10px #bb7911;
-    font-family: nexa-light;
-    border-radius: 5px;
-    height: 120px;
-    padding: 10px;
-    overflow: auto;
-}*/
+
 .test_cont_gradient {
     font-size: 11px;
     font-family: nexa-light;
@@ -1104,25 +1080,8 @@ h4
 .footer_bottom_img
 {
     width: 100%;
-/*    margin-top: -119px;*/
 }
-/*.all_rights_reserved {
-    border-bottom: 33px solid #F9EA7E;
-    border-left: 129px solid transparent;
-    border-right: 134px solid transparent;
-    height: 0;
-    width: 100%;
-    background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
-   margin-top: 64px;
-    margin-left: 28px;
-    transform: rotate(180deg);
-}
-.gradient_footer p {
-    transform: rotate(180deg);
-    margin-top: 6px;
-    font-family: nexa-bold;
-    font-size: 12px;
-}*/
+
 .all_rights_reserved {
     border-bottom: 33px solid #F9EA7E;
     border-left: 129px solid transparent;
