@@ -2225,3 +2225,7 @@ padding-bottom: 0px;
 
 }
 }
+
+.mail_id::placeholder{
+    color: #ffffff;
+}

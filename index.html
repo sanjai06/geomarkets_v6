@@ -20,6 +20,7 @@
   <!-- custom css link -->
   <link rel="stylesheet" type="text/css" href="./vendar/css/responsive.css">
   <link rel="stylesheet" type="text/css" href="vendar/css/sliders.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body >
 <!-- container fluid start -->
@@ -428,13 +429,13 @@
 </div>
 </section>
 <!-- geo section start -->
-<section class="container-sm">
+<section class="container-lg">
    <div class="geo_bg "> 
      <div class="pt-2em"></div>
        <div class="geo-header-text">
           <span class="gradient-texts">G</span><span class="gradient-texts">E</span><span class="gradient-texts">T</span>&nbsp;&nbsp;<span class="gradient-texts">S</span><span class="gradient-texts">T</span><span class="gradient-texts">A</span><span class="gradient-texts">R</span><span class="gradient-texts">T</span><span class="gradient-texts">E</span><span class="gradient-texts">D</span>&nbsp;&nbsp;<span class="gradient-texts">W</span><span class="gradient-texts">I</span><span class="gradient-texts">T</span><span class="gradient-texts">H</span>&nbsp;&nbsp;<span class="gradient-texts">G</span><span class="gradient-texts">E</span><span class="gradient-texts">O</span>&nbsp;&nbsp;<span class="gradient-texts">M</span><span class="gradient-texts">A</span><span class="gradient-texts">R</span><span class="gradient-texts">K</span><span class="gradient-texts">E</span><span class="gradient-texts">T</span><span class="gradient-texts">S</span>
         </div>
-        <div><div class="gradinet-underline">.</div></div>
+        <div><div class="gradinet-underline " style="width: 75%;margin-left: 190px;"></div></div>
          <!-- trapezoid module start -->
           <div class="row pg-bot" >
                 <div class="col-sm-1 col-lg-1"></div>
@@ -685,11 +686,13 @@
            <p class="foooter-head">Subscribe</p>
             <div class="footer-border-gradient"></div> 
             <div class="mar-10"></div>
-            <div class="pt mail_id">
-              <input type ="text" class="left_button" value="ENTER YOUR EMAIL ID">
-              <button class="right_button">SUBMIT
-              </button>
-           </div>
+            <form action="mailto:emailid@example.com" method="post" enctype="text/plain">
+              <div class="pt mail_id">
+                <input type ="text" class="left_button" value="" placeholder="ENTER YOUR EMAIL ID">
+                <input class="right_button btn" value="Submit" type="submit"
+                />
+             </div>
+            </form>
              <div class="mar-29"></div>
 
            <p class="foooter-head">Geo Market at Social
