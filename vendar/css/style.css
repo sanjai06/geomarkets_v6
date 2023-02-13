@@ -29,10 +29,11 @@ display: none;
 }
 body
 {
-background: #000000;
+background: #ffffff;
 padding: 0px;
-margin: 0px;
+margin: 0;
 user-select: none;
+width: 100%;
 
 }
 /*header css*/
@@ -234,16 +235,20 @@ margin-left: 4em;
 {
 background:url('../../assert/slider_set/1.png');
 margin-top: -4em;
+background-repeat: no-repeat;
+
 }
 .slider_bg_2
 {
 background:url('../../assert/slider_set/2.png');
 margin-top: -4em;
+background-repeat: no-repeat;
 }
 .slider_bg_3
 {
 background:url('../../assert/slider_set/3.png');
 margin-top: -4em;
+background-repeat: no-repeat;
 }
 /*.slider_bg_4
 {
@@ -254,6 +259,7 @@ margin-top: -4em;
 {
 background:url('../../assert/slider_set/5.png');
 margin-top: -4em;
+background-repeat: no-repeat;
 }
 
 .swiper

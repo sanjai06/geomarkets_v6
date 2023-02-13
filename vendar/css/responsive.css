@@ -2414,29 +2414,29 @@ margin-top: 20px;
     .slider_bg_1
 {
   background:url('../../assert/slider_set/01_1366.jpg');
-
+  background-repeat: no-repeat;
 }
 
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_1366.jpg');
    width: 100%;
-
+   background-repeat: no-repeat;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_1366.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_4
 {
   background:url('../../assert/slider_set/04_1366.jpg');
-
+  background-repeat: no-repeat;
 }
 .slider_bg_5
 {
   background:url('../../assert/slider_set/06_1366.jpg');
-
+  background-repeat: no-repeat;
 }
 .gradinet-underline {
     width: 45%;
@@ -2776,16 +2776,17 @@ padding: 4px 15px;
 {
   background:url('../../assert/slider_set/01_lg.jpg');
 width: 100%;
+background-repeat: no-repeat;
 }
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_lg.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_lg.jpg');
-   
+  background-repeat: no-repeat;
 }
 /*.slider_bg_4
 {
@@ -2795,12 +2796,12 @@ width: 100%;
 .slider_bg_5
 {
   background:url('../../assert/slider_set/05_lg.jpg');
-
+  background-repeat: no-repeat;
 }
 .slider_bg_6
 {
   background:url('../../assert/slider_set/06_lg.jpg');
-
+  background-repeat: no-repeat;
 }
 .mb-testimonal-bg>img
 {
@@ -3133,26 +3134,27 @@ border-bottom: 1px;
 {
   background:url('../../assert/slider_set/01_2000.jpg');
 width: 100%;
+background-repeat: no-repeat;
 }
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_4
 {
   background:url('../../assert/slider_set/06_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .slider_bg_5
 {
   background:url('../../assert/slider_set/05_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .gradinet-underline {
     width: 50%;
@@ -3670,26 +3672,27 @@ padding-bottom: 0px;
 {
   background:url('../../assert/slider_set/01_2000.jpg');
 width: 100%;
+background-repeat: no-repeat;
 }
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_4
 {
   background:url('../../assert/slider_set/06_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .slider_bg_5
 {
   background:url('../../assert/slider_set/05_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .trade_mark_button
 {
@@ -3953,26 +3956,27 @@ h4
 {
   background:url('../../assert/slider_set/01_2000.jpg');
 width: 100%;
+background-repeat: no-repeat;
 }
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_2000.jpg');
-   
+  background-repeat: no-repeat;
 }
 .slider_bg_4
 {
   background:url('../../assert/slider_set/06_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .slider_bg_5
 {
   background:url('../../assert/slider_set/06_2000.jpg');
-
+  background-repeat: no-repeat;
 }
 .trade_mark_button
 {
@@ -4212,15 +4216,70 @@ h4
 }
 html {
 
-    transform: scale(2)
-    transform-origin: 0 0;
-    margin-left: 30%;
-    margin-right: 30%;
-    width: 1800px;
+    width: 1780px;
 }
 .container-fluid
 {
-    width: 1900px;
+    width: 100%;
+    background: #000000;
+}
+.header-img-bott
+{
+   width: 88%;
+}
+.br-mr {
+    margin-top: 11.1em;
+}
+body {
+  width: 120%;
+}
+
+.footer_padding 
+{
+    padding-left: 20em;
+    padding-top: 7em;
+    padding-right: 17em;
+}
+
+.geo_mark_cenetr_text {
+    margin-left: -0.8em;
+    margin-top: 1em;
+}
+.border-black {
+width: 17%;
+}
+.heart-beat-1 {
+
+    margin-left: 3em;
+}
+.under-line
+{
+   width: 17%;
+}
+.gradinet-underline {
+
+width: 31%;
+
+}
+.geo_marker_center_img {
+    margin-left: -1em;
+    margin-top: 6em;
+    width: 90px;
+}
+}
+
+@media only screen and (m-width: 5040px)
+{
+@-ms-viewport{
+ width: 1080px;
+}
+html {
+
+    width: 1780px;
+}
+.container-fluid
+{
+    width: 100%;
     background: #000000;
 }
 .header-img-bott
