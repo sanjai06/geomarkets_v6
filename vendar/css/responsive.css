@@ -42,9 +42,6 @@ user-select: none;
 cursor: pointer;
 }
 
-
-
-
 /*header css*/
 .header_bg
 {
@@ -52,8 +49,7 @@ background-image: url('../../assert/page_layer/header_bg.png');
 background-image: no-repeat;
 }
 
-
-.header_logo
+.header_logoz
 {
 width: 300px;
 }
@@ -117,7 +113,6 @@ left: 0;
 top: 15%;
 width: 100%;
 overflow: auto; 
-
 }
 
 /* Modal Content */
@@ -269,35 +264,40 @@ margin-left: 4em;
 {
 background:url('../../assert/slider_set/1.jpg');
 background-image: no-repeat;
+background-size: cover;
 }
 .slider_bg_2
 {
 background-image:url('../../assert/slider_set/2.jpg');
 background-image: no-repeat;
+background-size: cover;
 }
 .slider_bg_3
 {
 background-image:url('../../assert/slider_set/3.jpg');
 background-image: no-repeat;
+background-size: cover;
 
 }
 .slider_bg_4
 {
 background-image:url('../../assert/slider_set/4.jpg');
 background-image: no-repeat;
+background-size: cover;
 
 }
 .slider_bg_5
 {
 background-image:url('../../assert/slider_set/5.jpg');
 background-image: no-repeat;
+background-size: cover;
 
 }
 .slider_bg_6
 {
 background-image:url('../../assert/slider_set/6.jpg');
 background-image: no-repeat;
-
+background-size: cover;
 }
 
 .swiper
@@ -651,7 +651,6 @@ float: right;
     background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
     -webkit-background-clip: text;
     font-family:nexa-blackitalic;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #000000);
     font-size: 30px;
@@ -750,9 +749,7 @@ h4
     background-repeat: no-repeat;
     padding: 10px;
     object-fit: cover;
-    webkit-background-size: 100% 100%;
     z-index: 1;
-
 }
 .geo_marker_center_img
 {
@@ -816,7 +813,7 @@ h4
 {
     background-image: url('../../assert/page_layer/testimonal_bg.png');
     background-image: no-repeat;
-    -webkit-background-size: 100% 100%;
+    
 }
 .under-line
 {
@@ -4214,10 +4211,7 @@ h4
 @-ms-viewport{
  width: 1080px;
 }
-html {
 
-    width: 1780px;
-}
 .container-fluid
 {
     width: 100%;
@@ -4273,10 +4267,7 @@ width: 31%;
 @-ms-viewport{
  width: 1080px;
 }
-html {
 
-    width: 1780px;
-}
 .container-fluid
 {
     width: 100%;

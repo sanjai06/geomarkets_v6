@@ -34,6 +34,7 @@ padding: 0px;
 margin: 0;
 user-select: none;
 width: 100%;
+overflow: scroll
 
 }
 /*header css*/
@@ -733,7 +734,8 @@ h4
 .testimonal_bg
 {
     background-image: url('../../assert/page_layer/testimonal_bg.png');
-    background-image: no-repeat;
+    background-repeat: no-repeat !important;
+    background-size: cover;
     -webkit-background-size: 100% 100%;
 }
 .testimonal-heading
