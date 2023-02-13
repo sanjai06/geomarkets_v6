@@ -812,7 +812,9 @@ h4
 .testimonal_bg
 {
     background-image: url('../../assert/page_layer/testimonal_bg.png');
-    background-image: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
 }
 .under-line
@@ -1287,7 +1289,7 @@ margin-top: 1em;
 {
     .footer_mb_bg
 {
-       background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
+     background: linear-gradient(to left, #BE7D1D 10%, #F9EA7E 46%, #BE7D1D 88%);
        padding: 5px;
        line-height: 27px;
 }
@@ -1296,6 +1298,7 @@ margin-top: 1em;
 height: 6px;
 width: 83%;
 margin-top: 0px;
+margin-left: ;
 
 }
 .under-line 
@@ -2516,10 +2519,7 @@ margin-top: 20px;
     font-size: 17px;
     line-height: 19px;
     }
-    .gradinet-underline
-     {
-        width: 45%;
-    }
+    
     .under-line {
     width: 28%;
 }
@@ -2616,10 +2616,7 @@ margin-top: 20px;
          margin-left: -2.7em;
     }
   
-    .gradinet-underline 
-    {
-     width: 49%;
-    }
+    
     .geo_marker_center_img {
         margin-left: -3em;
     }
@@ -2663,7 +2660,7 @@ margin-top: 20px;
     width: 21%;
 }
 .gradinet-underline {
-    width: 46%;
+    width: 50%;
 }
 .geo_marker_center_img {
     margin-left: -4.8em;
@@ -2766,7 +2763,7 @@ padding: 4px 15px;
 }
 .gradinet-underline
 {
-    height: 8px;
+    
     width: 47%;
 }
 .slider_bg_1
@@ -3155,6 +3152,7 @@ background-repeat: no-repeat;
 }
 .gradinet-underline {
     width: 50%;
+    margin-left: 23%;
 }
 
 .test_cont_gradient
@@ -4320,3 +4318,5 @@ width: 31%;
     width: 90px;
 }
 }
+
+
