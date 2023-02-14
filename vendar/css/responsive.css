@@ -3952,26 +3952,31 @@ h4
   background:url('../../assert/slider_set/01_2000.jpg');
 width: 100%;
 background-repeat: no-repeat;
+background-size: cover;
 }
 .slider_bg_2
 {
   background:url('../../assert/slider_set/02_2000.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider_bg_3
 {
   background:url('../../assert/slider_set/03_2000.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider_bg_4
 {
   background:url('../../assert/slider_set/06_2000.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider_bg_5
 {
   background:url('../../assert/slider_set/06_2000.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .trade_mark_button
 {
@@ -4152,8 +4157,8 @@ h4
     
 }
 .video-img {
-    width: auto;
-    margin-left: -1%;
+    width: 100%;
+    margin: auto;
     transform: translate(0%, 0%);
 
 }
@@ -4194,12 +4199,8 @@ h4
     padding-bottom: 70px;
 }
 
-.video-img
-    {
-        width: auto;
-    }
-    .gradinet-underline
-     {
+.gradinet-underline
+{
         width: 54%;
 }
 }
