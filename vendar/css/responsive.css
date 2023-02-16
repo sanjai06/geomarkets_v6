@@ -4337,8 +4337,14 @@ width: 31%;
 }
 }
 
-@media (max-width:950px) {
+@media (max-width:900px) {
     #geo_wrapper > div {
-        width: 50%;
+        width: 40%;
+    }
+}
+@media (max-width:769px) {
+    #geo_wrapper > div {
+        width: 100%;
+        text-align: center;
     }
 }
