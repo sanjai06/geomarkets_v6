@@ -4347,4 +4347,11 @@ width: 31%;
         width: 100%;
         text-align: center;
     }
+    .testimonal-slider {
+        margin-top: -250px;
+    }
+    #testimonal_wrapper .swiper {
+        height: 370px;
+        padding-top: 90px;
+    }
 }
