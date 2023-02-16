@@ -4337,4 +4337,8 @@ width: 31%;
 }
 }
 
-
+@media (max-width:950px) {
+    #geo_wrapper > div {
+        width: 50%;
+    }
+}
